@@ -66,37 +66,45 @@ body {
 }
 
 /* =================== */
-/* Mobile layout schema */
 @media only screen and (max-width: 1000px) {
-    /* pulsante più in basso su mobile */
-    #playMusicBtn {
-        left: 130px;
-        top: 700px;
-        padding:16px 24px;
-        font-size:12px;
-    }
-
-    /* pannello più stretto e centrato */
+    /* pannello più piccolo e centrato su mobile */
     .panel {
-        width: 80%;
-        left: 6%;
-        top: -5px;
+        width: 50%;         /* prima 80% */
+        left: 5%;           /* centrato */
+        top: 5px;          /* più in alto */
+        padding: 8px;       /* riduce spazi interni */
+        font-size: 10px;    /* scala il testo */
     }
 
-    /* lista ridotta o nascosta su mobile */
+    .panel h1 {
+        font-size: 16px;    /* riduce titolo */
+    }
+
+    .panel input, 
+    .panel button {
+        font-size: 10px;    /* riduce input e pulsanti */
+        padding: 6px;       /* meno spazio interno */
+    }
+
     .panel .list {
-        max-height:50px;
-        overflow:hidden;
-        font-size:14px;
+        max-height: 60px;   /* lista più piccola */
+        font-size: 12px;
     }
-   /* spostamento sfondo solo su mobile */
+
+    /* pulsante musica più piccolo */
+    #playMusicBtn {
+        left: 140px;
+        top: 720px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    /* spostamento sfondo */
     body {
-        background-position: 48% 160%;  /* 70% a destra, 80% in basso */
+        background-position: 47% 180%;
     }
-    /* schema visuale - commenti per riferimento */
-    /* pannello: top-left (5%, 20px) */
-    /* pulsante music: bottom-left (20px, 500px) */
 }
+
 </style>
 </head>
 <body>
