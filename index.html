@@ -18,8 +18,8 @@ body {
 }
 .panel {
     position: absolute;
-    top:20px; left:20px;
-    width: 300px;
+    top:40px; left:30px;
+    width: 320px;
     background: rgba(0,0,0,0.5);
     padding: 15px;
     border-radius: 10px;
@@ -27,7 +27,7 @@ body {
 }
 .panel h1 { font-size: 20px; margin:0 0 10px; }
 .panel input { width:100%; padding:8px; margin-top:5px; border-radius:6px; border:none; font-size:14px;}
-.panel button { margin-top:8px; padding:8px 10px; border:none; border-radius:6px; background:#ffb547; cursor:pointer; font-weight:bold; }
+.panel button { margin-top:10px; padding:8px 10px; border:none; border-radius:6px; background:#ffb547; cursor:pointer; font-weight:bold; }
 .panel .list { margin-top:10px; max-height:200px; overflow:auto; background: rgba(255,255,255,0.1); padding:5px; border-radius:6px; }
 .panel .list div { margin-bottom:5px; padding:5px; background: rgba(0,0,0,0.2); border-radius:4px; }
 
@@ -54,8 +54,8 @@ body {
 /* pulsante Christmas song */
 #playMusicBtn {
     position:absolute;
-    left:80px; 
-    top:280px;
+    left:35px; 
+    top:260px;
     padding:18px 28px;
     font-size:20px;
     background:#f1c40f;
@@ -67,11 +67,11 @@ body {
 
 /* =================== */
 /* Mobile layout schema */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1000px) {
     /* pulsante più in basso su mobile */
     #playMusicBtn {
-        left: 70px;
-        top: 560px;
+        left: 130px;
+        top: 700px;
         padding:16px 24px;
         font-size:12px;
     }
@@ -80,7 +80,7 @@ body {
     .panel {
         width: 80%;
         left: 6%;
-        top: -10px;
+        top: -5px;
     }
 
     /* lista ridotta o nascosta su mobile */
@@ -89,7 +89,10 @@ body {
         overflow:hidden;
         font-size:14px;
     }
-
+   /* spostamento sfondo solo su mobile */
+    body {
+        background-position: 48% 160%;  /* 70% a destra, 80% in basso */
+    }
     /* schema visuale - commenti per riferimento */
     /* pannello: top-left (5%, 20px) */
     /* pulsante music: bottom-left (20px, 500px) */
@@ -298,4 +301,3 @@ setInterval(fetchBalls,2000);
 </script>
 </body>
 </html>
-
